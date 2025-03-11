@@ -1,5 +1,6 @@
 package com;
 
+import com.model.Author;
 import com.model.Book;
 
 public class Main {
@@ -7,7 +8,9 @@ public class Main {
 		
 		Book book=new Book();
 		book.setTitle("Java");
-		book.setAuthor("Herbert");
+		Author author=new Author();
+		author.setName("Herbertssss");
+		book.setAuthor(author);
 		System.out.println(book);
 	}
 
